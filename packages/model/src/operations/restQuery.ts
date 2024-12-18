@@ -40,7 +40,7 @@ export function createRestQuery<ModelType, DataType, VariablesType extends Recor
         info.loading = value.loading
         if(!value.loading) {
             info.error = value.error
-            if (value.data) {
+            if (value.data!=null) {
                 info.data = value.data
             }
         }

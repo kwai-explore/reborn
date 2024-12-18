@@ -50,7 +50,7 @@ export function createRestMutation<ModelType, DataType, VariablesType extends Re
         info.loading = value.loading;
         if (!info.loading) {
             info.error = value.error;
-            if (value.data) {
+            if (value.data!=null) {
                 info.data = value.data;
             }
         }
